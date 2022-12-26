@@ -60,7 +60,7 @@ catkin config --cmake-args -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS=-fdiagno
 cd src
 
 git clone https://github.com/superboySB/agile_autonomy.git
-vcs-import < agile_autonomy/dependencies.yaml  # 网慢可以考虑手动装
+vcs-import < agile_autonomy/dependencies.yaml  # 网慢可以考虑手动装(注意rpg_flightmare的名称与repo不同)
 cd rpg_mpl_ros
 git submodule update --init --recursive
 
