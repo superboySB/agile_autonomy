@@ -80,8 +80,10 @@ echo 'export RPGQ_PARAM_DIR=/home/<path/to/>catkin_aa/src/rpg_flightmare' >> ~/.
 Now open a new terminal and type the following commands.
 
 ```bash
+sudo apt-get install ros-noetic-octomap ros-noetic-octomap-mapping ros-noetic-octomap-msgs ros-noetic-octomap-ros ros-noetic-octomap-rviz-plugins ros-noetic-octomap-server npm libsdl-image1.2-dev libsdl-dev
+
 # Build and re-source the workspace
-catkin build
+catkin build  # 需要排查open3D等一系列问题
 . ../devel/setup.bash
 
 # Create your learning environment
