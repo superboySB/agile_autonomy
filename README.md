@@ -74,7 +74,7 @@ sudo apt install -y libzmqpp-dev libeigen3-dev libglfw3-dev libglm-dev
 sudo apt install -y libvulkan1 vulkan-utils gdb
 
 # Add environment variables (Careful! Modify path according to your local setup)
-echo 'export RPGQ_PARAM_DIR=/home/<path/to/>catkin_aa/src/rpg_flightmare' >> ~/.bashrc
+echo 'export RPGQ_PARAM_DIR=/home/dzp/Projects/agile_autonomy_ws/catkin_aa/src/rpg_flightmare' >> ~/.bashrc
 ```
 
 Now open a new terminal and type the following commands.
