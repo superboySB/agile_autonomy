@@ -59,8 +59,8 @@ catkin config --merge-devel
 catkin config --cmake-args -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS=-fdiagnostics-color
 cd src
 
-git clone git@github.com:uzh-rpg/agile_autonomy.git
-vcs-import < agile_autonomy/dependencies.yaml
+git clone https://github.com/superboySB/agile_autonomy.git
+vcs-import < agile_autonomy/dependencies.yaml  # 网慢可以考虑手动装
 cd rpg_mpl_ros
 git submodule update --init --recursive
 
