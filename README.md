@@ -88,9 +88,9 @@ catkin build  # 需要排查open3D等一系列问题
 
 # Create your learning environment
 roscd planner_learning
-conda create --name tf_24 python=3.7  # 需要关WSL2里面的代理
+conda create --name tf_24 python=3.8.10  # 需要关WSL2里面的代理
 conda activate tf_24
-pip install tensorflow-gpu==2.4
+conda install tensorflow-gpu
 pip install rospkg==1.2.3 pyquaternion open3d opencv-python
 ```
 
