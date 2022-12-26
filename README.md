@@ -88,7 +88,7 @@ catkin build  # 需要排查open3D等一系列问题
 
 # Create your learning environment
 roscd planner_learning
-conda create --name tf_24 python=3.7
+conda create --name tf_24 python=3.7  # 需要关WSL2里面的代理
 conda activate tf_24
 pip install tensorflow-gpu==2.4
 pip install rospkg==1.2.3 pyquaternion open3d opencv-python
@@ -113,6 +113,7 @@ Run the Network in an other terminal:
 cd agile_autonomy_ws
 source catkin_aa/devel/setup.bash
 conda activate tf_24
+cd /home/dzp/Projects/agile_autonomy_ws/catkin_aa/src/agile_autonomy/planner_learning
 python test_trajectories.py --settings_file=config/test_settings.yaml
 
 ```
